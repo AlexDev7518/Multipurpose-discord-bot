@@ -110,7 +110,7 @@
  
   1. `./botconfig/config.json`
      * `token` you can get from: [discord-Developers](https://discord.com/developers/applications)
-     * `memer_api` you can get from: [Meme-Development DC](https://discord.gg/Mc2FudJkgP)
+     * `memer_api` you can get from: [Meme-Development DC](https://discord.gg/EX3NfEMdbR)
      * `spotify.clientSecret` you can get from: [Spotify-Developer](https://developer.spotify.com)
      * `spotify.clientID` you can get from: [Spotify-Developer](https://developer.spotify.com)
      * `fnbr` is a FNBR token, which you may get from [FNBRO.co](https://fnbr.co/api/docs) (needed for fnshop)
