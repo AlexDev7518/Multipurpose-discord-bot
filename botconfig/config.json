@@ -4,9 +4,9 @@
    "ownerIDS": [
       "OWNER_ID"
    ],
-   "fnbr": "43549683-4cdb-4eb5-8f1c-1b88dc82d910",
-   "fortnitetracker": "ac53a1db-3988-4cf5-888f-2518a1501abb",
-   "memer_api": "OAX58L8AY10",
+   "fnbr": "",
+   "fortnitetracker": "",
+   "memer_api": "",
    "status": {
       "text": "Hosted By: Roverdev",
       "text2": "By: discord.gg/milrato",
@@ -24,7 +24,7 @@
       ]
    },
    "spotify": {
-      "clientSecret": "get from developers.spotify.com",
+      "clientSecret": "",
       "clientID": ""
    },
    "settings": {
