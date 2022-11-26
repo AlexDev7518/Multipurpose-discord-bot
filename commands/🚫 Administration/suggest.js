@@ -48,8 +48,8 @@ module.exports = {
             client.settings.ensure(message.guild.id, {
               suggest: {
                 channel: "",
-                approvemsg: `<a:Yes:964306724821536768> Accepted Idea! Expect this soon.`,
-                denymsg: `<:no:990786942348193843> Thank you for the feedback, but we are not interested in this idea at this time.`,
+                approvemsg: `<a:yes:833101995723194437>  Accepted Idea! Expect this soon.`,
+                denymsg: `<:no:833101993668771842>  Thank you for the feedback, but we are not interested in this idea at this time.`,
                 maybemsg: `💡 We are thinking about this idea!`,
                 duplicatemsg: `💢 This is a duplicated Suggestion`,
                 soonmsg: `👌 Expect this Feature Soon!`,
@@ -90,7 +90,7 @@ module.exports = {
                     .setDescription(eval(client.la[ls]["cmds"]["administration"]["suggest"]["variable8"]))
                 ]});
             
-            if(args[1].length !== 18)
+            if(args[1].length !== 19)
                 return message.reply({embeds :[new MessageEmbed()
                     .setColor(es.wrongcolor)
                     .setFooter(client.getFooter(es)).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : `https://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png`)

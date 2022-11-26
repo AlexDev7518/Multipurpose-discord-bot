@@ -226,5 +226,8 @@ module.exports = async (client, interaction) => {
     }
     //Execute the Command
 		command.run(client, interaction, interaction?.member.user, es, ls, prefix, player, message)
+
+    console.log(`${command.name} ran by: ${interaction.user.username}`)
+
 	}
 }

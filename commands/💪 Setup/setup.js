@@ -298,26 +298,26 @@ module.exports = {
           }
           //Event
           client.on('interactionCreate',  (menu) => {
-            if (menu?.message.id === menumsg1.id) {
+            if (menu?.message?.id === menumsg1.id) {
               if (menu?.user.id === cmduser.id) {
                 menumsg1.edit({components: [], embeds: menumsg1.embeds}).catch(() => {});
                 menuselection(menu);
               }
-              else menu?.reply({content: `<:no:990786942348193843> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             }
             if (menu?.message.id === menumsg2.id) {
               if (menu?.user.id === cmduser.id) {
                 menumsg2.edit({components: [], embeds: menumsg2.embeds}).catch(() => {});
                 menuselection(menu);
               }
-              else menu?.reply({content: `<:no:990786942348193843> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             }
             if (menu?.message.id === menumsg3.id) {
               if (menu?.user.id === cmduser.id) {
                 menumsg3.edit({components: [], embeds: menumsg3.embeds}).catch(() => {});
                 menuselection(menu);
               }
-              else menu?.reply({content: `<:no:990786942348193843> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+              else menu?.reply({content: `<:no:833101993668771842> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
             }
           });
         }

@@ -27,10 +27,10 @@ module.exports = client => {
                 fetch(`http://api.brainshop.ai/get?bid=153861&key=0ZjvbPWKAxJvcJ96&uid=1&msg=${encodeURIComponent(message)}`)
                 .then(res => res.json())
                 .then(data => {
-                  message.channel.send({content: data.cnt}).catch(() => {})
+                  message.channel.send({content: data.cnt, allowedMentions: {  roles: [],  users: [],  parse: []}}).catch(() => {})
                 });
               }catch (e){
-                message.channel.send({content: "<:no:990786942348193843> AI CHAT API IS DOWN"}).catch(() => {})
+                message.channel.send({content: "<:no:833101993668771842> AI CHAT API IS DOWN"}).catch(() => {})
               }
             }
         }catch(e){console.log(String(e).grey)}
@@ -41,7 +41,7 @@ module.exports = client => {
             if (!message.guild || message.guild.available === false || !message.channel || message.author.bot ) return;
             for(const user of [...message.mentions.users.values()]){
                 if(client.afkDB.has(message.guild.id + user.id)){
-                    await message.reply({content: `<:Crying:867724032316407828> **${user.tag}** went AFK <t:${Math.floor(client.afkDB.get(message.guild.id+user.id, "stamp") / 1000)}:R>!${client.afkDB.get(message.guild.id+user.id, "message") && client.afkDB.get(message.guild.id+user.id, "message").length > 1 ? `\n\n__His Message__\n>>> ${String(client.afkDB.get(message.guild.id+user.id, "message")).substring(0, 1800).split(`@`).join(`\`@\``)}` : "" }`}).then(msg=>{
+                    await message.reply({content: `<:Crying:867724032316407828> **${user.tag}** went AFK <t:${Math.floor(client.afkDB.get(message.guild.id+user.id, "stamp") / 1000)}:R>!${client.afkDB.get(message.guild.id+user.id, "message") && client.afkDB.get(message.guild.id+user.id, "message").length > 1 ? `\n\n__His Message__\n> ${String(client.afkDB.get(message.guild.id+user.id, "message")).substring(0, 1800).split(`@`).join(`\`@\``)}` : "" }`}).then(msg=>{
                         setTimeout(()=>{
                             try{
                                 msg.delete().catch(() => {});

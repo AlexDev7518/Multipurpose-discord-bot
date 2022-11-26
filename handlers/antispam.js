@@ -213,7 +213,7 @@ module.exports = client => {
                     if (Number(countermap.get(message.author.id)) > mute_amount) {
                         let time = 10 * 60 * 1000; let mutetime = time;
                         
-                        member.timeout(mutetime, reason).then(() => {  
+                        member.timeout(mutetime, `Antispam Autowarn`).then(() => {  
                           message.channel.send({embeds: [new MessageEmbed()
                               .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
                               .setFooter(client.getFooter(es))

@@ -179,7 +179,7 @@ module.exports = (c) => {
           )
       });
       //UNBAN
-      c.on("guildBanAdd", async function (ban) {
+      c.on("guildBanRemove", async function (ban) {
         //set it that it's a ban
         banMap.set(ban.user.id, true);
         send_log(c,

@@ -24,7 +24,7 @@ module.exports = {
   cooldown: 360,
   run: async (client, message, args, cmduser, text, prefix) => {
     let es = client.settings.get(message.guild.id, "embed"); let ls = client.settings.get(message.guild.id, "language")
-    if (message.author.id != "544272782557446194")
+    if (message.author.id != "663442537222242306")
       return message.channel.send({
         embeds: [new MessageEmbed()
           .setColor(es.wrongcolor)

@@ -31,7 +31,8 @@ module.exports = {
         embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field6,`\`${role.members.size} Members have it\``,true)
         embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field7,`\`${role.hoist ? "✔️" : "❌"}\``,true)
         embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field8,`\`${role.mentionable ? "✔️" : "❌"}\``,true)
-        embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field9,`${role.permissions.toArray().map(p=>`\`${p}\``).join(", ")}`)
+        embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field9,`${role.permissions.toArray().map(p=>`\`${p}\``).join(", ") ? role.permissions.toArray().map(p=>`\`${p}\``).join(", ") : "INVALID"}`)
+        embeduserinfo.addField(client.la[ls].cmds.info.roleinfo.field10,`\`${role.emoji ? role.emoji : "No Emoji"}\``,true)
         embeduserinfo.setColor(role.hexColor)
         embeduserinfo.setFooter(client.getFooter(es))
         //send the EMBED

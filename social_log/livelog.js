@@ -46,7 +46,7 @@ module.exports = async client => {
     })
     const tempData = client.social_log.get(guild.id, `twitch`)
     if(!tempData.channels) return console.log(` [TWITCH] | ${moment().format("ddd DD-MM-YYYY HH:mm:ss.SSSS")} | ${guild.name} ::  NO TWITCH DATA (TW-CHANNELS)`.magenta)
-    if(!tempData.channelId || tempData.channelId == undefined || tempData.channelId.length != 18) return console.log(`NO TWITCH DATA (DCCHANNEL)`.magenta)
+    if(!tempData.channelId || tempData.channelId == undefined || tempData.channelId.length != 19) return console.log(`NO TWITCH DATA (DCCHANNEL)`.magenta)
     tempData.channels.map(async function (chan, i) {
         if (!chan.ChannelName) return console.log(` [TWITCH] | ${moment().format("ddd DD-MM-YYYY HH:mm:ss.SSSS")} | ${guild.name} ::  NO CHANNEL NAME FOUND :C`.magenta);
         let member = await guild.members.fetch(chan.DISCORD_USER_ID).catch(() => {});;

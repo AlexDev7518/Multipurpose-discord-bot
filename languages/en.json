@@ -298,6 +298,7 @@
                 "field7": "**<:arrow:832598861813776394> Hoisted:**",
                 "field8": "**<:arrow:832598861813776394> Mentionable:**",
                 "field9": "**<:arrow:832598861813776394> Permissions:**",
+                "field10": "**<:arrow:832598861813776394> Emoji:**",
                 "variable1": "`\\`\\`\\` ${e.message ? e.message : e.stack ? String(e.stack).substr(0, 2000) : String(e).substr(0, 2000)}\\`\\`\\``"
             },
             "serveravatar": {
@@ -1511,7 +1512,7 @@
                 "variable6": "`\\`\\`\\`${e.message}\\`\\`\\``"
             },
             "eval": {
-                "variable1": "`${emoji.msg.ERROR}  Error | You are not allowed to run this command! Only the **\\`Tomato#6966\\`** is allowed to run this Cmd`",
+                "variable1": "`${emoji.msg.ERROR}  Error | You are not allowed to run this command! Only the **\\`AlexDev#7518\\`** is allowed to run this Cmd`",
                 "variable2": "`${emoji.msg.ERROR}  Error | You have to at least include one evaluation arguments`",
                 "variable3": "`Milrato Development | Evaluation`",
                 "variable4": "`\\`\\`\\`` + splitDescription[0] + `\\`\\`\\``",
