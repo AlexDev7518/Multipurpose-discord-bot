@@ -60,7 +60,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RoverDevelopment/Tomato-Bot-Fixed"
+    "url": "git+https://github.com/AlexDev7518/Multipurpose-discord-bot"
   },
   "keywords": [
     "lavalink",
@@ -83,7 +83,7 @@
     "reactions"
   ],
   "bugs": {
-    "url": "https://github.com/RoverDevelopment/Tomato-Bot-Fixed/issues"
+    "url": "https://github.com/AlexDev7518/Multipurpose-discord-bot/issues"
   },
-  "homepage": "https://milrato.dev"
+  "homepage": "https://roverdev.xyz"
 }
