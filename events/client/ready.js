@@ -20,7 +20,7 @@ module.exports = client => {
         console.log("\n")
         console.log(`     ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`.bold.brightYellow)
         console.log(`     ┃ `.bold.brightYellow + " ".repeat(-1+stringlength-` ┃ `.length)+ "┃".bold.brightYellow)
-        console.log(`     ┃ `.bold.brightYellow + `Thanks COMPLEX#0001 & Deadpool#1234 `.bold.brightYellow + " ".repeat(-1+stringlength-` ┃ `.length-`Thanks COMPLEX#0001 & Deadpool#1234`.length)+"┃".bold.brightYellow)
+        console.log(`     ┃ `.bold.brightYellow + `Thanks COMPLEX#0001 & AlexDev#518 `.bold.brightYellow + " ".repeat(-1+stringlength-` ┃ `.length-`Thanks COMPLEX#0001 & AlexDev#518`.length)+"┃".bold.brightYellow)
         console.log(`     ┃ `.bold.brightYellow + ` /--/ Discord.gg/roverdev /--/ `.bold.brightYellow+ " ".repeat(-1+stringlength-` ┃ `.length-` /--/ Discord.gg/roverdev /--/ `.length)+ "┃".bold.brightYellow)
         console.log(`     ┃ `.bold.brightYellow + " ".repeat(-1+stringlength-` ┃ `.length)+ "┃".bold.brightYellow)
         console.log(`     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`.bold.brightYellow)
